@@ -11,4 +11,4 @@ Install Sonic Pi from https://sonic-pi.net/
 
 ## Example:
 
-* A "compiled" version as recording is available as an hello_world_output.mp3
+* A "compiled" version is available as a recording under hello_world_output.mp3
