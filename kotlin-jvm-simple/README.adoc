@@ -12,7 +12,7 @@ To see it in action, simply run:
 As usual for any simple Gradle or Maven project, the build configuration is more lines of code
 than the actual program.
 
-The actual program is a minimum hello world in Kotlin:
+The actual program is a minimalistic hello world in Kotlin:
 
 src/main/kotlin/main.kt:
 [source,kotlin]
