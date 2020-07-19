@@ -1,6 +1,7 @@
 = Kotlin/Ktor Hello World
 
-Kotlin can be used with Spring Boot, it is well supported.
+Kotlin can be used with Spring Boot, it is
+https://spring.io/guides/tutorials/spring-boot-kotlin/[well supported].
 There also is a list of  other framework options for
 https://kotlinlang.org/docs/reference/server-overview.html[using Kotlin for Server-side Development]
 in the official Kotlin docs.
@@ -10,7 +11,8 @@ as I wanted to try something new.
 
 I picked Ktor over some other options as it is really made for idiomatic Kotlin.
 There is support for many use cases we typically want in backend development
-(JWT authentication, Logging, CORS, Tracing, Metrics, and OpenAPI 3 API-first support).
+(JWT authentication, Logging, CORS, Tracing, Metrics, and OpenAPI 3 API-first
+https://ktor.io/blog/2018/08/openapi-gen.html[support]).
 
 There is one *big caveat* with Ktor, and that is persistence and integration with JMS or Kafka:
 Out of the box, there is no support for JPA/Hibernate. If you agree with the authors of
@@ -21,7 +23,7 @@ like https://github.com/JetBrains/Exposed[JetBrain's Exposed] or https://github.
 And in a world of https://knative.dev/docs/eventing/[Knative eventing] and
 https://camel.apache.org/camel-k/latest/index.html[Apache Camel K]
 (https://camel.apache.org/blog/2020/06/camel-k-release-1.0.0/[release blog],
-https://developers.redhat.com/devnation/tech-talks/serverless-apps-camelk?sc_cid=7013a000002gj5pAAA[Event-driven serverless applications with Camel K | DevNation Tech Talk]),
+https://developers.redhat.com/devnation/tech-talks/serverless-apps-camelk?sc_cid=7013a000002gj5pAAA[Event-driven serverless applications with Camel K]),
 maybe direct integration is not even a strict requirement, let's see what the future brings.
 
 
@@ -41,9 +43,33 @@ This will start an embedded web server, listening on port 8080.
 * Hello viesure: http://localhost:8080/hello-world?name=viesure
 * Another approach: http://localhost:8080/hello/viesure
 
+== Alternatives
+
+https://kotlinlang.org/docs/reference/server-overview.html[The Kotlin documentation]
+lists alternatives Kotlin micro service frameworks.
+
+In addition to that list, I came across https://www.http4k.org/[http4k], which is
+https://www.reddit.com/r/Kotlin/comments/d06za9/ktor_vs_http4k/[comparable] to Ktor.
+Some people have http4k https://www.richyhbm.co.uk/posts/compiling-kotlin-netty-webapp-with-graalvm/[running on GraalVM].
+
+== Why not Kotlin/Native?
+
+Currently, there is https://github.com/ktorio/ktor/issues/571[neither Kotlin/Native support in Ktor],
+nor any other production grade http server library available for
+https://kotlinlang.org/docs/reference/native-overview.html[Kotlin/Native].
+There is https://github.com/KwangIO/kwang[Kwang], but it is experimental and unmaintained.
 
 == Useful Resources
 
 * https://plugins.jetbrains.com/plugin/10823-ktor[Ktor IntelliJ plugin] - The plugin supports generating new
   projects using https://start.ktor.io/, similar to the https://start.ktor.io/[Spring Initializr].
 * https://ryanharrison.co.uk/2018/04/14/kotlin-ktor-exposed-starter.html[RESTful Kotlin with Ktor and Exposed]
+* https://github.com/kotest/kotest/[Kotest] Kotlin testing framework
+* https://mockk.io/[MockK] Kotlin mocking framework
+ (there is also https://github.com/Ninja-Squad/springmockk[springmockk],
+  introduced in official https://spring.io/guides/tutorials/spring-boot-kotlin/[Spring Boot Kotlin tutorial])
+* https://github.com/gothinkster/realworld[RealWorld example apps] implementing a Medium.com clone, implementations including
+** https://github.com/dragneelfps/realworld-kotlin-ktor[RealWorld example app for Ktor]
+** https://github.com/alisabzevari/kotlin-http4k-realworld-example-app[RealWorld example app for htt4k]
+
+
