@@ -19,6 +19,11 @@ fun Application.module(testing: Boolean = false) {
         }
     }
 
+    // enable CORS for OpenAPI example
+    install(CORS) {
+        anyHost()
+    }
+
     routing {
         get("/") {
             call.respondText("Hello World!", contentType = ContentType.Text.Plain)
