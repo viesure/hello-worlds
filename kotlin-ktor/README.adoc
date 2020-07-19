@@ -79,6 +79,6 @@ There is https://github.com/KwangIO/kwang[Kwang], but it is experimental and unm
   introduced in the official https://spring.io/guides/tutorials/spring-boot-kotlin/[Spring Boot Kotlin tutorial])
 * https://github.com/gothinkster/realworld[RealWorld example apps] implementing a Medium.com clone, implementations including
 ** https://github.com/dragneelfps/realworld-kotlin-ktor[RealWorld example app for Ktor]
-** https://github.com/alisabzevari/kotlin-http4k-realworld-example-app[RealWorld example app for htt4k]
+** https://github.com/alisabzevari/kotlin-http4k-realworld-example-app[RealWorld example app for http4k]
 
 
