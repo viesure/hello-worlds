@@ -1,0 +1,22 @@
+= Kotlin/JVM Simple Hello World
+
+This is a very simple example for a Kotlin project using a Gradle build.
+
+To see it in action, simply run:
+
+[source,shell script]
+----
+./gradlew run
+----
+
+As usual for any simple Gradle or Maven project, the build configuration is more lines of code
+than the actual program.
+
+The actual program is a minimum hello world in Kotlin:
+
+src/main/kotlin/main.kt:
+[source,kotlin]
+----
+fun main() = println("Hello World!")
+----
+
