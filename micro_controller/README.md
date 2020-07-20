@@ -1,6 +1,6 @@
 # Hello world example
 
-This single program puts `Hello world` on any of the arduino controller serial`s.
+This single program puts `Hello world` on any of the arduino controller serial's.
 It was designed and created by using `create.arduino.cc` WebEditor where the IDE runs in the cloud (powered by AWS) and no extra install is needed. 
 
 To able to establish connection with your device, install `arduino create plugin`, tested under Chrome. 
